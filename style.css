@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Belanosima', sans-serif;
+    
+}
+
+html{
+    background-color: #000000;
+}
+
+body{
+    width: 100%;
+    position: relative;
+    font-size: 20px;
+    color: #2ef8a0;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+h1{
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+h2{
+    font-weight: 400;
+    
+}
+h3{
+    font-weight: 400;
+}
+
+
+.navBar{
+    margin-bottom: 80px;
+    display:flex;
+    justify-content: space-between;
+    height: 70px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 5px #c3ffff;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding: 0 40px;
+    align-items: center;
+}
+
+.material-symbols-outlined{
+    width: 80px;
+    height: auto;
+}
+
+#logOut{
+    padding: 0 20px;
+    border: 2px solid #ff0534;
+    text-transform: uppercase;
+    font-weight:500;
+    height: 50px;
+    width: auto;
+    background-color: #000000;
+    color: #f9f9f9;
+    letter-spacing: 2px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+#logOut:hover{
+    color: #000000;
+    background-color: #ff3842;
+    box-shadow: 0 0 10px #ff3842,
+    0 0 20px #ff3842;
+    border: none;
+}
+
+#logInUser{
+    border: #ef7ef7 1px solid;
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 15px #02b4d7;
+}
+ul{
+    list-style: none;
+}
+
+#EnterInfo{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.info{
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+
+.loginInput{
+    margin-bottom: 30px;
+    height: 50px;
+    max-width: 300px;
+    text-align: center;
+    width: 200px;
+    background-color: #000000;
+    color: #f9f9f9;
+    
+
+}
+
+#checkButton{
+    margin-bottom: 30px;
+    border: 2px solid #02b4d7;
+    text-transform: uppercase;
+    font-weight:500;
+    height: 50px;
+    width: 200px;
+    background-color: #000000;
+    color: #f9f9f9;
+    letter-spacing: 2px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+#checkButton:hover{
+    color: #000000;
+    background-color: aqua;
+    box-shadow: 0 0 10px aqua,
+    0 0 20px aqua;
+    border: none;
+}
+
+#homepage{
+    border: #ef7ef7 1px solid;
+    width: 700px;
+    padding: 20px;
+    margin: auto;
+    /* background-color: #160c16; */
+    /* background-image: linear-gradient(135deg, #6103a0, #2f2c79, #1c1c3c, #1c1c4e ); */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 15px #02b4d7;
+}
+
+#welcomeUser{
+    font-size: 25px;
+    
+}
+
+.homeUser{
+    margin-bottom: 40px;
+    text-align: left;
+    padding: 0 auto 0 1em;
+}
+
+.balanceUser{
+    margin-bottom: 50px;
+    text-align: right;
+    padding: 0 1em 0 auto;
+}
+
+#balanceValue{
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #f9f9f9;
+}
+
+.activityBank{
+    display: flex;
+    color: #f9f9f9;
+    justify-content: space-between;
+    height: auto;
+    align-items: center;
+    padding: 0 45px;
+}
+
+.pageDeposit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #017899;
+    height: 150px;
+    border-radius: 5px;
+    width: 250px;
+
+}
+
+#depositInput{
+    margin-top: 10px;
+    height: 50px;
+    max-width: 300px;
+    text-align: center;
+    width: 180px;
+    background-color: #02b4d7;
+    color: #f9f9f9;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.pageWidhtdraw{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #c21a6c;
+    height: 150px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+#widthdrawInput{
+    margin-top: 10px;
+    height: 50px;
+    max-width: 300px;
+    text-align: center;
+    width: 180px;
+    background-color: #e62788;
+    color: #f9f9f9;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+#depositBtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    border: 2px solid #005c7c;
+    text-transform: uppercase;
+    font-weight:500;
+    height: 50px;
+    width: auto;
+    background-color: #005c7c;
+    color: #f9f9f9;
+    letter-spacing: 2px;
+    font-size: 20px;
+    transition: 0.5s
+
+}
+
+#depositBtn:hover{
+    color: #000000;
+    background-color: #b4ffff;
+    box-shadow: 0 0 10px #b4ffff,
+    0 0 20px #b4ffff;
+    border: none;
+}
+
+#widthdrawBtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    border: 2px solid #7e0037;
+    text-transform: uppercase;
+    font-weight:500;
+    height: 50px;
+    width: auto;
+    background-color: #7e0037;
+    color: #f9f9f9;
+    letter-spacing: 2px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+#widthdrawBtn:hover{
+    color: #000000;
+    background-color: #ffb3ff;
+    box-shadow: 0 0 10px #ffb3ff,
+    0 0 20px #ffb3ff;
+    border: none;
+}
+
+
+/* .ImgPrincipal{
+    width: 100%;
+}  */
+/* #000000 #160c16 #2c182c #422442 #583058 */

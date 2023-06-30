@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM</title>
+    <link rel="stylesheet" href="/cajeroAuto/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <nav class="navBar">
+      <span class="material-symbols-outlined"> account_balance </span>
+      <h1>LTABANK</h1>
+      <button id="logOut">Log out</button>
+    </nav>
+    <div id="validationUser">
+      <!-- info de ingreso -->
+      <div id="logInUser">
+        <h2 id="EnterInfo">Ingrese sus datos</h2>
+        <ul class="information">
+          <li class="infoUser">
+            <h3 class="info">Usuario</h3>
+            <input
+              id="user"
+              class="loginInput"
+              type="text"
+              placeholder="Ingrese su usuario"
+            />
+          </li>
+          <li class="infoPassword">
+            <h3 class="info">Contraseña</h3>
+            <input
+              id="password"
+              class="loginInput"
+              type="password"
+              placeholder="Ingrese su contraseña"
+            />
+          </li>
+          <!-- Boton de ingreso -->
+          <button id="checkButton" onclick="login()">Ingresar</button>
+        </ul>
+      </div>
+    </div>
+    <!-- bloque principal -->
+    <div id="homepage">
+      <div class="homeUser">
+        <h1><span id="welcomeUser"></span></h1>
+      </div>
+      <div class="balanceUser">
+        <h2><span id="balanceValue"></span></h2>
+        <h3>Balance</h3>
+      </div>
+      <div class="activityBank">
+        <div class="pageDeposit">
+          <h3 class="">Depositar dinero</h3>
+          <input id="depositInput" type="text" placeholder="0"/>
+          <button id="depositBtn" onclick="deposit()">Depositar</button>
+        </div>
+        <div class="pageWidhtdraw">
+          <h3>Retirar dinero</h3>
+          <input id="widthdrawInput" type="text" placeholder="0"/>
+          <button id="widthdrawBtn" onclick="widthdraw()">Retirar</button>
+        </div>
+      </div>
+    </div>
+    <!-- <img src="https://www.freepik.es/vector-premium/resumen-3d-poligonal-lujo-azul-oscuro-fondo-morado_6065339.htm" alt="smalldisney" class="ImgPrincipal"> -->
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!-- <input type="button" value="Ingresar" onclick="login()"> -->
