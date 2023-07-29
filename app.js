@@ -16,7 +16,7 @@ const user = null;
 function login() {
   const user_ = document.getElementById("user").value;
   const pass_ = document.getElementById("password").value;
-  const userNotFound = true;
+  let userNotFound = true;
 
   for (let x = 0; x < account.length; x++) {
     const element = account[x];
@@ -58,6 +58,9 @@ function deposit() {
     
     console.log(account[principalArea].balance);
     console.log(balanceValue);
+    document.getElementById(
+      "balanceValue"
+    ).innerText = `$ ${account[principalArea].balance} UDS`;
   } else {
     alert(
       "Su saldo no debe superar los $990, ingrese nuevamente el valor de su deposito"
@@ -66,6 +69,7 @@ function deposit() {
   depositInput.value = '';
 }
 
+const withdrawInput = document.getElementById("widthdrawInput");
 function widthdraw() {
   const value = withdrawInput.value;
   const balanceValue =
@@ -74,6 +78,9 @@ function widthdraw() {
   if (balanceValue > 10) {
     account[principalArea].balance = balanceValue;
     console.log(account[principalArea].balance);
+    document.getElementById(
+      "balanceValue"
+    ).innerText = `$ ${account[principalArea].balance} UDS`
   } else {
     alert(
       "Su saldo no debe ser menor a $10, ingrese nuevamente el valor de su retiro"
@@ -81,6 +88,12 @@ function widthdraw() {
   }
 
 }
+
+const logOutBtn = document.querySelector("#logOut")
+
+logOutBtn.addEventListener("click",()=>{
+  window.location.replace("index.html")
+})
 
 // depositBtn.addEventListener('click', () => {
 //     const value = depositInput.value;
